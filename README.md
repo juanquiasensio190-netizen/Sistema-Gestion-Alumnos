@@ -1,7 +1,8 @@
 # Sistema-Gestion-Alumnos
 
 ## Integrante
-- César López
+-   Diego Pena
+-   Juan franco
 
 ## Descripción
 Proyecto académico para la materia Cloud Computing.
@@ -11,6 +12,4 @@ Repositorio creado y configurado.
 
 ## Próximas tareas
 - Crear tablero Trello.
-- Implementar modificación 1.
-- Implementar modificación 2.
-- Implementar modificación 3.
+
