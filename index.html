@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Alumnos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Control de Alumnos</h1>
+            <p>Panel de administración académica</p>
+        </header>
+
+        <main class="content-layout">
+            <!-- Formulario de Registro -->
+            <section class="form-section">
+                <h2>Registrar Alumno</h2>
+                <form id="alumno-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    <div class="form-group">
+                        <label for="cedula">Documento / Cédula:</label>
+                        <input type="text" id="cedula" required placeholder="Ej. 4567890">
+                    </div>
+                    <div class="form-group">
+                        <label for="materia">Materia / Curso:</label>
+                        <input type="text" id="materia" required placeholder="Ej. Cloud Computing">
+                    </div>
+                    <div class="form-group">
+                        <label for="nota">Nota Final:</label>
+                        <input type="number" id="nota" min="1" max="5" required placeholder="Escala 1 al 5">
+                    </div>
+                    <button type="submit" class="btn-submit">Guardar Alumno</button>
+                </form>
+            </section>
+
+            <!-- Tabla de Visualización -->
+            <section class="table-section">
+                <h2>Lista de Alumnos Registrados</h2>
+                <div class="table-responsive">
+                    <table id="alumnos-tabla">
+                        <thead>
+                            <tr>
+                                <th>Cédula</th>
+                                <th>Nombre</th>
+                                <th>Materia</th>
+                                <th>Nota</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista-alumnos">
+                            <!-- Los datos se inyectarán con JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
